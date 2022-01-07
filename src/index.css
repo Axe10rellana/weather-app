@@ -1,0 +1,143 @@
+/* CUSTOM PROPERTIES */
+:root {
+  --white-color: #fff;
+  --white-color-2: #eceff1;
+  --white-color-3: #cfd8dc;
+  --gray-color: #ccc;
+  --black-color: #000;
+  --link-color: #509ee3;
+  --mark-color: #01579b;
+  --red-color: #dc3545;
+  --title-color: #333;
+  --text-color: #222;
+  --blue-color: #2c3e50;
+  --blue-color-dark: #233140;
+}
+
+/* RESET */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: var(--text-color);
+  background: #2980b9;
+  background: -webkit-linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
+  background: linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+h5 {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+h6 {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 1.6;
+}
+
+hr {
+  border: thin solid var(--white-color-3);
+  margin: 2rem auto;
+  width: 80%;
+}
+
+[id] {
+  scroll-margin-top: 2ex;
+}
+
+/*Estilos de la pagina*/
+
+.header-style {
+  padding: 20px 0;
+  background-color: var(--blue-color);
+}
+
+header a {
+  color: var(--white-color);
+}
+
+header a:hover {
+  color: var(--white-color);
+}
+
+.image {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.weatherSVG {
+  display: block;
+  height: 350px;
+  width: 350px;
+  margin: auto;
+}
+
+.footer-style {
+  padding-top: 50px;
+  background-color: var(--blue-color);
+}
+
+footer,
+h3,
+i {
+  color: var(--white-color);
+}
+footer h3 {
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+footer .footer-above {
+  padding-top: 50px;
+  background-color: var(--blue-color);
+}
+footer .footer-col {
+  margin-bottom: 50px;
+}
+footer .footer-below {
+  padding: 25px 0;
+  background-color: var(--blue-color-dark);
+}
