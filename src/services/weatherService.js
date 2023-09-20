@@ -95,8 +95,14 @@ const formatToLocalTime = (
   format = "cccc dd LLL yyyy' | Hora local: 'hh:mm a"
 ) => DateTime.fromSeconds(secs).setZone(zone).toFormat(format);
 
+const formatToLocalTimeWithoutHour = (
+  secs,
+  zone,
+  format = "cccc dd LLL yyyy' |"
+) => DateTime.fromSeconds(secs).setZone(zone).toFormat(format);
+
 const iconUrlFromCode = (code) =>
   `https://openweathermap.org/img/wn/${code}@2x.png`;
 
-export { formatToLocalTime, iconUrlFromCode };
+export { formatToLocalTime, formatToLocalTimeWithoutHour, iconUrlFromCode };
 export default getFormattedWeatherData;
